@@ -39,12 +39,12 @@
                 "title": "Lab 300: Fusion SaaS Application Setup (ERP Adapters)",
                 "description": "In this lab, we are going to review the configuration steps on Fusion SaaS applications (ERP, HCM, CRM etc.) to enable connectivity through AIC Fusion SaaS Adapters."
             },
-            {
-                "number": "400",
-                "filename": "ics400.md",
-                "title": "Lab 400: Oracle Sales Cloud (Events) - Opportunity to Order",
-                "description": "In this lab, we are going to create an integration flow that listens to events in Oracle Sales Cloud. OSC events will trigger an integration flow, for example, an opportunity created in OSC is used to create an order."
-            },
+            // {
+            //     "number": "400",
+            //     "filename": "ics400.md",
+            //     "title": "Lab 400: Oracle Sales Cloud (Events) - Opportunity to Order",
+            //     "description": "In this lab, we are going to create an integration flow that listens to events in Oracle Sales Cloud. OSC events will trigger an integration flow, for example, an opportunity created in OSC is used to create an order."
+            // },
             // {
             //     "number": "500-1",
             //     "filename": "ics500a.md",
