@@ -46,7 +46,6 @@ This hands-on lab will allow participants to do the following:
     > - Configure EBS connection.
     > - Map to EBS Connector.
     > - Activate the Integration.
-
 - Lab 400 – Run Scheduled Integration between HCM and EBS
 
 ## Get Started: 
