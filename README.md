@@ -56,7 +56,7 @@
 
 ## **Lab 400: Run Scheduled Integration between HCM and EBS**
 
-> **Documentation**: [Lab 400](/ics400.md)
+> **Documentation**: [Lab 400](/oic400.md)
 > 
 > ### Objectives
 > - In this Lab we are going to run an Integration that we finished building in Lab300b
