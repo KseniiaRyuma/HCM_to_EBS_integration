@@ -1,8 +1,7 @@
-# SaaS to EBS Integration Workshop
+<img class="float-right" src="images/j2c-logo.png">
 
-![](images/j2c-logo.png)
-
-> Updated: March 15th, 2019
+# **SaaS to EBS Integration Workshop**  
+> ***Last Updated: March 2019***  
 
 ## Upgrade To Cloud: Oracle Integration Cloud (OIC) - Enterprise SaaS Integration Hands On Lab
 A hands-on workshop to dive into development on Oracle's Integration Cloud Platform
@@ -32,9 +31,22 @@ Oracle Integration Cloud (OIC) brings together all the critical capabilities of 
 
 ## Hands-on Lab Overview
 This hands-on lab will allow participants to do the following:
-- Lab 100 – Workshop Pre-requisites and Exploring AIC 
-- Lab 200 – Basic AIC Integration Development (Hello World Integration)
-- Lab 300 – Applications Setup/Pre-Requisites
+- Lab 100 – Workshop Pre-requisites and Exploring OIC 
+- Lab 200 – Basic OIC Integration Development (Hello World Integration)
+- Lab 300A – HCM and EBS Integration
+    > - Set up HCM Adapter.
+    > - Set up EBS Adapter.
+    > - Create Scheduled Integration.
+    > - Configure the HCM Connection.
+    > - Add a Function Call.
+    > - Mapping.
+- Lab 300B – HCM and EBS Integration
+    > - Add a Switch Action and configure a condition.
+    > - Add a Loop Action.
+    > - Configure EBS connection.
+    > - Map to EBS Connector.
+    > - Activate the Integration.
+
 - Lab 400 – HCM to EBS integration build
 
 ## Get Started: 
