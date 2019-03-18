@@ -3,8 +3,6 @@
 <img src="https://cloudaccelerate.github.io/TTC-CommonContent/images/ttc-logo.png" />
 </center> 
 
-#Step-by-step Instructions
-
 # Workshop Overview
 
 **To View in Interactive Labguide Format:**  
