@@ -19,7 +19,7 @@
             {
                 "number": "200",
                 "filename": "oic200.md",
-                "title": "Lab 200: Basic OIC Development (Hello World Integration)",
+                "title": "Lab 200: Basic OIC Development (Hello World Integration",
                 "description": "In this lab, we are going to build a 'hello world' echo service."
             },
             {

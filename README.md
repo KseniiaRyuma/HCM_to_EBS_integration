@@ -1,3 +1,4 @@
+
 <center>
 <img src="https://cloudaccelerate.github.io/TTC-CommonContent/images/ttc-logo.png" />
 </center> 
@@ -15,58 +16,47 @@
 **Reference the following Lab Guides by opening their Documentation Files:**
 ## **Required pre-work**
 
-> **Documentation**: [Lab 000](/ics000.md)
-> 
-> ### **Objectives**
-> - 
 
 ## **Lab 100: Explore OIC**
 
-> **Documenation**: [Lab 100](/ics100.md)
+> **Documenation**: [Lab 100](/oic100.md)
 > 
 > ### **Objectives**
 > - Explore Integration Cloud Service (OIC) to become familiar with its service console and functionality.
 
 ## **Lab 200: Basic OIC Development**
 
-> **Documenation**: [Lab 200](/ics200.md)
+> **Documenation**: [Lab 200](/oic200.md)
 >
 > ### **Objectives**
 > - Create your first integration to echo an input to the output by building a 'Hello World' integration
 
-## **Lab 300: Fusion SaaS Application Adapter Configuration**
+## **Lab 300A: HCM and EBS Integaration**
 
-> **Documenation**: [Lab 300](/ics300.md)
+> **Documenation**: [Lab 300A](/oic300a.md)
 > 
 > ### **Objectives**
-> - 
+> 1. Set up HCM Adapter.
+> 2. Set up EBS Adapter.
+> 3. Create Scheduled Integration.
+> 4. Configure the HCM Connection.
+> 5. Add a Function Call.
+> 6. Mapping.
 
-## **Lab 400: COMING SOON**
+## **Lab 300B: EBS Connectionn**
+
+> **Documenation**: [Lab 300B](/oic300b.md)
+> 
+> ### **Objectives**
+> 1. Add a Switch Action and configure a condition.
+> 2. Add a Loop Action.
+> 3. Learn how to configure EBS connection.
+> 4. Mapping to EBS Connector.
+> 5. Activate the Integration.
+
+## **Lab 400: Run Scheduled Integration between HCM and EBS**
 
 > **Documentation**: [Lab 400](/ics400.md)
 > 
 > ### Objectives
-> 
-> - Objective Pending
-
-## **Lab 500a: Fusion HCM with ATOM Feeds Pre-Development Lab**
-
-> **Documentation**: [Lab 500a](/ics500a.md)
-> 
-> ### Objectives
-> 
-> - To configure the Oracle Integration Cloud (OIC) environment in order to complete Lab 500B
-> - Create the connections needed in the integration created in Lab 500B
-> - Create a lookup function
-> - Create an OIC library connection
-
-## **Lab 500b: Fusion HCM with ATOM Feeds Development Lab**
-
-> **Documentation**: [Lab 500b](/ics500b.md)
-> 
-> ### Objectives
-> 
-> - To Create a Scheduled Orchestration
-> - Gain familiarity with working with switch actions and for each loops in OIC
-> - Explore monitoring in OIC
-> - Explore ATOM feeds using Oracle's Fusion HCM
+> - In this Lab we are going to run an Integration that we finished building in Lab300b
