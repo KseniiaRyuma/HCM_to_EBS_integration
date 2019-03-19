@@ -2,10 +2,8 @@
 
 #  **Lab 300 - Part A: Oracle Integration Cloud (OIC) Development Workshop**
 
-# **HCM and EBS Integaration**
+# **HCM and EBS Integration: Fusion HCM with ATOM Feeds Development Lab**
 > ***Last Updated: March 2019***  
-
-# Fusion HCM with ATOM Feeds Development Lab
 
 ## **Introduction**
 
@@ -19,7 +17,7 @@
 
 > Here is a description of what is happening with this integration:
 
- > After a new employee had been created in Oracle HCM Cloud, HCM Atom feeds is triggered by Scheduled Integration. HCM Atom feeds provide notifications of Oracle Fusion Human Capital Management (HCM) events. When an event occurs in Oracle Fusion HCM, the corresponding Atom feed is delivered automatically to the Atom server. The feed contains details of the REST resource on which the event occurred. Subscribers who consume these Atom feeds use the REST resources to retrieve additional information about the resource, in our case it is a newly created employee. After, through EBS connector and proper mapping, that emploeey is synchronized with EBS application. 
+ > After a new employee has been created in Oracle HCM Cloud, an HCM Atom feeds is triggered by the Scheduled Integration. HCM Atom feeds provide notifications of Oracle Fusion Human Capital Management (HCM) events. When an event occurs in Oracle Fusion HCM, the corresponding Atom feed is delivered automatically to the Atom server. This feed contains details of the REST resource in which the event occurred. Subscribers who consume these Atom feeds use the REST resources to retrieve additional information about the resource; in our case it is a newly created employee. After this is completed, the employee is synchronized with the EBS application using the EBS connector and proper mapping.
 
 
 ## **Objectives**
@@ -29,43 +27,17 @@
 > 3. Create Scheduled Integration.
 > 4. Configure the HCM Connection.
 > 5. Add a Function Call.
-> 6. Mapping.
+> 6. Configure Mapping.
 
 ## **Required Artifacts**
 
 - The following lab and an Oracle Integration Cloud account that will be supplied by your instructor.
-- A HCM instance and connection URL that will be provided by your instructor.
+- An HCM instance and connection URL that will be provided by your instructor.
 - An EBS instance and connection URL that will be provided by your instructor.
-
-
----
-## Login to OIC Integration Home Page.
-
-- From your browser (Firefox or Chrome recommended) login to the OIC Integration Console using the following URL:
-
-OIC Integration Home Page - https://**OAIC Instance URL**/ic/integration/home/faces/global
-
-**OAIC Home Page URL** provided by your instructor
-
-- Enter your `User Name` and `Password` and click **Sign In** if required
-
-***NOTE:*** the **User Name and Password** values will be given to you by your instructor.
-
-![](images/300/image002.png)  
-
-
-You will now be presented with the OIC Service Console from which you will be performing the rest of this workshop lab.
-
-![](images/300/image004c.png)
-
-Select the an Integration Tab as it shown bellow
-
-![](images/300/image04c.png)
-
 
 ## **300a.1: HCM Adapter Set Up**
 
-- Select Integrations to open up Integration console. Then click the `Connections` in the left menu under Designer. And click on **Create** in the upper-right
+- Select Integrations to open up the Integration console. Then click the `Connections` in the left menu under Designer. And click on **Create** in the upper-right
 
 	![](images/300/image006.png) 
 
@@ -90,9 +62,9 @@ Note that the **Identifier** will automatically be created based on the **Name**
 
 
 - For the *WSDL URL*, enter the property value for the WSDL as follows:
-	_hhttps://ucf1-edku-fa-ext.oracledemos.com/fscmService/ServiceCatalogService?WSDL_
+	_https://ucf1-edku-fa-ext.oracledemos.com/fscmService/ServiceCatalogService?WSDL_
 
-Where _hhttps://ucf1-edku-fa-ext.oracledemos.com_ is your HSM instance URL
+Where _https://ucf1-edku-fa-ext.oracledemos.com_ is your HSM instance URL
 
 - Add an oPTIONAL Interface Catalog URL if you have one.
 	![](images/300/image010.png) 
@@ -128,7 +100,7 @@ Your new HCM connection appears in the list of configured connections.
 
 - Select the *Oracle E-Business Suite* Connection, by either doing a search, or by scrolling down to the *Oracle E-Business Suite* connection, then click on the *Select* button of the *Oracle E-Business Suite* connection.
 
-	![](images/400/image001.png)
+	![](images/300/image1.png)
 
 - Fill in the information for the new connection 
 
@@ -139,50 +111,47 @@ Note that the *Identifier* will automatically be created based on the *Name* you
 
 - Click *Create*
 
-	![](images/400/image002.png)
+	![](images/300/image2.png)
 
 - Click the *Configure Connectivity* button
 
-	![](images/400/image003.png)
+	![](images/300/image3.png)
 
 - Enter the *Connection URL* which you will be given by your instructor.  It will be in format like the following: `https://ucf4-ebs0116-gse.oracledemos.com`.
 
 - After entering the *Connection URL*, select the *OK* button to save the value.
 
-	![](images/400/image004.png)
+	![](images/300/image4.png)
 
-- Select the *Configure Security* button so we can change the default security configuration
+- Select the *Configure Security* button:
 
-	![](images/400/image005.png)
+	![](images/300/image5.png)
 
 - Select the following options:
 
-	- *Security Policy*: `Basic Authentication`
-	- *Username*: `operations`
-	- *Password*: `to be provided by your instructor`
+	- *Username*: `It is the username of your EBS instance`
+	- *Password*: `It is the password of your EBS instance`
 
 After the security policy properties have been setup, click on the *OK* button to dismiss the dialog
 
-![](images/400/image006.png)
+![](images/300/image6.png)
 
 
 - The connection needs to be tested by clicking on the *Test* button in the upper-right of the *UserXX EBS Operations* connection definition page.
 
-	![](images/400/image009.png)
+	![](images/300/image7.png)
 
-- Now, select the *Save* button to save the connection configuration.
+- Select the *Save* button to save the connection configuration.
 
-	![](images/400/image010.png)
+	![](images/300/image8.png)
 
 - Note that after the successful test, the percentage complete in the upper-right should go to *100%*.  After the save, a green banner message will appear in the top indicating a successful save operation.
 
 - Finally, select the *Close* button to exit the connection configuration screen.
 
-	![](images/400/image011.png)
-
 - You will now see your new **Oracle E-Business Suite** connection on top of the **Connections** list.
 
-	![](images/400/image012.png)
+	![](images/300/image9.png)
 
 ## **300a.3: Create Scheduled Integration**
 
@@ -211,11 +180,11 @@ After you've filled in the information, select the **Create** button
 
 
 ### **300a.4: Configure the HCM Connection**
-- Hover a pluss sign and search the HCM connection name that you created previously.
+- Hover over the plus sign and search for the HCM connection name that you created previously.
 
  ![](images/300/1.png)
 
-- Right after you will see _Configure Oracle HCM Cloud Endpoint_ wizard will pop up.
+- Right after the _Configure Oracle HCM Cloud Endpoint_ wizard will pop up.
 
  ![](images/300/2.png)
 
@@ -225,11 +194,11 @@ After you've filled in the information, select the **Create** button
 
 ![](images/300/3.png)
 
-- In the *Web Services* section select **Subscribe to Updates(via ATOM feed). That option allows to receive latest updates since a specific date on new hires, jobs etc. Select the *Next* button.
+- In the *Web Services* section select *Subscribe to Updates(via ATOM feed)*. That option allows to receive latest updates since a specific date on new hires, jobs etc. Select the *Next* button.
 
 ![](images/300/4.png)
 
-- In the *Operations* section select _Employee New Hire_ as an atom feed. Afer, make shure you check the box for  _Include Business Object in the Event Notifications (ATOM Feeds)_. Select the *Next* button.
+- In the *Operations* section select _Employee New Hire_ as an atom feed. Afer, make sure you check the box for  _Include Business Object in the Event Notifications (ATOM Feeds)_. Select the *Next* button.
 
 ![](images/300/5.png)
 
@@ -243,7 +212,7 @@ After you've filled in the information, select the **Create** button
 
 ![](images/300/8.png)
 
-- You are going to see _updated-min_ variable that is needed to be added for successful HCM invoking on the right side. The left side represents parametrs that are coming from our Scheduled Integration.
+- You are going to see _updated-min_ variable that is needed to be added for successful HCM invoking on the right side. The left side represents parameters that are coming from our Scheduled Integration.
 
 ![](images/300/9.png)
 
@@ -258,7 +227,7 @@ After you've filled in the information, select the **Create** button
 
 ![](images/300/11.png)
 
-- After selecting **Create** you are going to see the window as shown bellow.
+- After selecting **Create** you are going to see the window as shown below.
 
 ![](images/300/12.png)
 
@@ -267,9 +236,9 @@ After you've filled in the information, select the **Create** button
 ---
 ---
 
--  If you have not created a function previously, skipp that section.
+-  If you have not created a function previously, skip that section.
 
-- Create a js file and save it in your PC
+- Create a JavaScript (.js) file and save it in your PC
 
 ```
 function addTime(ts, z) {
@@ -281,18 +250,18 @@ function addTime(ts, z) {
 
 ```
 
-- Novigate to **Library** from Designer Home page.
+- Navigate to **Library** from Designer Home page.
 
 ![](images/300/13.png)
 
 
 - Then select **Register**.
 
-- In _Register Library_ wizard selct the js file that you just created and insert the required **Name**. Select Create button.
+- In _Register Library_ wizard select the .js file that you just created and insert the required **Name**. Select the Create button.
 
 ![](images/300/14.png)
 
-- By selecting **Orchestration** as a _Classification Type_ field for _Input_ and _Output_ will be prepopulated.
+- By selecting **Orchestration** as a _Classification Type_, the fields for _Input_ and _Output_ will be prepopulated.
 
 ![](images/300/15.png)
 
@@ -302,8 +271,7 @@ Now you can access that Function from your Integration Function Action.
 
 ![](images/300/16.png)
 
-- Come back to your Scheduled Integration,
----
+- Come back to your Scheduled Integration
 ---
 
 - Select Function button
@@ -351,13 +319,13 @@ concat( substring-before( /nssrcmpr:schedule/nssrcmpr:startTime, "."),".000Z")
 
 
 ### **300a.6 Mapping**
-- Now it is the right time to make the mapping between 
+- Now it's time to configure the mapping between the timestamp and the Atom feed.
 
-- Open the **Map** as it shown bellow.
+- Open the **Map** as it shown below.
 
 ![](images/300/26.png)
 
-- And make a connection by dragging and dropping a point from the fuction call `GetTimeStamp` to _updated-min_ variable from HCM cobbection. That time stamp is needed so the system know how far it should come back and load the new employees.
+- And make a connection by dragging and dropping a point from the fuction call `GetTimeStamp` to _updated-min_ variable from HCM connection. That time stamp is needed so the system will know what point in time it should refer to to load new employees.
 
 ![](images/300/27.png)
 
@@ -381,7 +349,7 @@ concat( substring-before( /nssrcmpr:schedule/nssrcmpr:startTime, "."),".000Z")
 
 ![](images/500b/image020.png)
 
-- On the variable column, select counfOfNewHires_assignment_1 from the dropdown
+- On the variable column, select countOfNewHires_assignment_1 from the dropdown
 - Set Data Type as string
 - The description is optional: _Count the # of new employees returned_
 - Select the pencil to edit the Value. 
@@ -389,7 +357,7 @@ concat( substring-before( /nssrcmpr:schedule/nssrcmpr:startTime, "."),".000Z")
 
 ![](images/500b/image020a.png)
 
-- In the expression builder you will drag and drop it to _Expression_ window the `EmployeeNewHireFeedFeed_Update` array that is coming  from the HCM. Your expression at the end should look like `count($Get-Atom-Feed/nsmpr3:EmployeeNewHireFeedResponse/nsmpr3:EmployeeNewHireFeed_UpdateSet)`
+- In the expression builder you will drag and drop it to _Expression_ window the `EmployeeNewHireFeedFeed_Update` array that is coming from HCM. Your expression at the end should look like `count($Get-Atom-Feed/nsmpr3:EmployeeNewHireFeedResponse/nsmpr3:EmployeeNewHireFeed_UpdateSet)`
 
 ![](images/500b/image020b.png)
 ![](images/500b/image020c.png)
@@ -398,4 +366,4 @@ concat( substring-before( /nssrcmpr:schedule/nssrcmpr:startTime, "."),".000Z")
 
 ![](images/500b/image020d.png)
 
-## **THIS LAB IS TO BE CONTINUE AT 300B**
+## **THIS LAB IS TO BE CONTINUED AT 300B**
