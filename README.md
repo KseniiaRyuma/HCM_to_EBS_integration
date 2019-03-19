@@ -7,13 +7,11 @@
 
 **To View in Interactive Labguide Format:**  
 
-[GitHub IO Pages](https://rebrand.ly/ttcicslab)
+[GitHub IO Pages](https://kseniiaryuma.github.io/HCM_to_EBS_integration/)
 
 # Deep Dive Oracle Integration Cloud (OIC)
 
 **Reference the following Lab Guides by opening their Documentation Files:**
-## **Required pre-work**
-
 
 ## **Lab 100: Explore OIC**
 
