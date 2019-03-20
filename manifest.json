@@ -36,7 +36,7 @@
             },
             {
                 "number": "400",
-                "filename": "ics400.md",
+                "filename": "oic400.md",
                 "title": "Lab 400:  Run Scheduled Integration between HCM and EBS",
                 "description": "In this lab, we are going to run the Scheduled Integrating that was built in Lab300A and Lab300B."
             }
