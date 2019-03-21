@@ -98,7 +98,7 @@
 
 - After giving the invocation a name, select the *Next* button.
 
-- In the *Web Services* section of the configuration wizard, for the *Product Family*, click on `=== Select ===` and then select `Human Resouces Suite`.  
+- In the *Web Services* section of the configuration wizard, for the *Product Family*, click on `=== Select ===` and then select `Human Resources Suite`.  
 
 (Note all the other EBS products for which APIs are available)
 
@@ -133,17 +133,17 @@ Note that the *Service Status* of `Ready to Use` indicates that the API has alre
 ![](images/500b/image033.png)
 
 - First, we are going to map _RESTHeader_. 
-- The first variable to map is _Responsibility_. Find it in your Target section. Click on the variable and select the option to _Create Target Node_. In poped up window bellow select _A_ (it reperesent String Data Type) and insert US_HRMS_MANAGER. Validate the assignment. 
+- The first variable to map is _Responsibility_. Find it in your Target section. Click on the variable and select the option to _Create Target Node_. In the popped up window below select _A_ (it represents String Data Type) and insert US_HRMS_MANAGER. Validate the assignment. 
 
 ![](images/500b/image034.png)
 
 ![](images/500b/image036.png)
 
-- If the assignment is successful, you are going to see a purple letter A next to the _Responsibility_ variable as it shown bellow. 
+- If the assignment is successful, you are going to see a purple letter A next to the _Responsibility_ variable as it shown below. 
 
 ![](images/500b/image035.png)
 
-- Repeat above steps for the following target variables as it shown bellow.
+- Repeat above steps for the following target variables as it shown below.
 
 	<table border=2, border-width=2>
 	  <tr>
@@ -157,17 +157,17 @@ Note that the *Service Status* of `Ready to Use` indicates that the API has alre
 	  <tr><td>Org_Id</td><td>201</td></tr>
 	</table>
 
-- After completeing the last step, your Target side is going to look like it shown bellow.
+- After completing the last step, your Target side is going to look like it shown below.
 
 ![](images/500b/image036a.png)
 
 - Now, let's map _InputParameters_.
 
-- On your right side of mapping find _P_HIRE_DATE_ variable and add `fn:current-date()` to its Expression. The result should look as it shown bellow. Do not forget to validate each assignment before continuing to the next variable.
+- On your right side of mapping find _P_HIRE_DATE_ variable and add `fn:current-date()` to its Expression. The result should look as it shown below. Do not forget to validate each assignment before continuing to the next variable.
 
 ![](images/500b/image036b.png)
 
-- Repeat above steps for the following target variables as it shown bellow.
+- Repeat above steps for the following target variables as it shown below.
 
 	<table border=2, border-width=2>
 	  <tr>
@@ -178,7 +178,7 @@ Note that the *Service Status* of `Ready to Use` indicates that the API has alre
 	  <tr><td>P_BUSINESS_GROUP_ID</td><td>202</td></tr>
 	</table>
 
-- The variables bellow will require to find corresponding values from the left side of mapping (those values are coming from HCM for each employee)
+- The variables below are required to find corresponding values from the left side of mapping (those values are coming from HCM for each employee)
 
 	<table border=2, border-width=2>
 	  <tr>
@@ -192,7 +192,7 @@ Note that the *Service Status* of `Ready to Use` indicates that the API has alre
      <tr><td>P_NATIONAL_IDENTIFIER </td><td></td></tr>
 	</table>
 
-- Make sure youe mapping looks like it shown bellow.
+- Make sure your mapping looks like it shown below.
 
 > - _P_LAST_NAME_
 ![](images/500b/image037.png)
@@ -209,14 +209,14 @@ Note that the *Service Status* of `Ready to Use` indicates that the API has alre
 > - _P_NATIONAL_IDENTIFIER_ ( PersonNidDetails -> NationalIdentifierNumber )
 ![](images/500b/image041.png)
 
-- Ypur final mapping should look as it shown bellow. 
+- Ypur final mapping should look as it shown below. 
 ![](images/500b/image042.png)
 
 - Validate your mappings and Close the window.
 
 - We just finished a simple mapping that will allow EBS to synchronize an employee that had been created in HCM.
 
-- At that point your integration supposed to look like it shown bellow.
+- At that point, your integration is supposed to look like it shown below.
 ![](images/500b/image043.png)
 
 ## **300b.5: Activate the Integration**
@@ -225,7 +225,7 @@ Note that the *Service Status* of `Ready to Use` indicates that the API has alre
 
 - Before the activation we need to assign **Tracking** so you can track fields during runtime. 
 
-- Find the humburger sign on the left side of your integration window.
+- Find the humburger sign on the right side of your integration window.
 
 ![](images/500b/image044.png)
 
@@ -233,7 +233,7 @@ Note that the *Service Status* of `Ready to Use` indicates that the API has alre
 
 ![](images/500b/image045.png)
 
-- Make sure the tracking was assigned and Save it. 
+- Make sure the tracking is assigned. Save it. 
 
 ![](images/500b/image046.png)
 
@@ -244,7 +244,7 @@ Note that the *Service Status* of `Ready to Use` indicates that the API has alre
 
 ![](images/500b/image048.png)
 
--  In this menu, check the box to enable tracing
+-  In this menu, check the box to enable tracing.
 
 ![](images/500b/image049.png)
 
