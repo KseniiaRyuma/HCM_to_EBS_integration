@@ -36,7 +36,6 @@
 - An EBS instance and connection URL that will be provided by your instructor.
 
 ### **300a.1: HCM Adapter Set Up**
-
 - Select Integrations to open up the Integration console. Then click the `Connections` in the left menu under Designer. And click on **Create** in the upper-right
 
 	![](images/300/image006.png) 
@@ -92,8 +91,6 @@ Your new HCM connection appears in the list of configured connections.
 ![](images/300/image018a.png) 
 
 ### **300a.2: EBS Adapter Set Up**
----
-
 - Select the `Connections` graphic in the designer portal and click on *Create*
 
 	![](images/300/image006.png) 
@@ -153,8 +150,7 @@ After the security policy properties have been setup, click on the *OK* button t
 
 	![](images/300/image9.png)
 
-## **300a.3: Create Scheduled Integration**
-
+### **300a.3: Create Scheduled Integration**
 - Select the *Integrations* link and click the **Create** button in the upper-right of the Integrations screen
 
 	![](images/300/image033.png)

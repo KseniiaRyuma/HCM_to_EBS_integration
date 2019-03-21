@@ -30,7 +30,6 @@
 ## **Getting Started**
 
 ### **300b.1: Add a Switch Action and Configure a condition**
-
 - To add a conditional statement, click on the flag icon 
 
 ![](images/500b/image016.png)
@@ -79,7 +78,6 @@
 ![](images/500b/image025d.png)
 
 ### **300b.3: Add EBS Connection to the Orchestration**
-
 - Select *Invoke* by clicking on plus sign right under _Loop_Atom_Feed_
 
 ![](images/500b/image026.png)
@@ -125,7 +123,6 @@ Note that the *Service Status* of `Ready to Use` indicates that the API has alre
 ![](images/500b/image032.png)
 
 ### **300b.4: Mapping to EBS Connector**
-
 - Once the mapping editor is displayed, we can begin to map the variables. Open the Map
 
 ![](images/500b/image033.png)
@@ -218,7 +215,6 @@ Note that the *Service Status* of `Ready to Use` indicates that the API has alre
 ![](images/500b/image043.png)
 
 ## **300b.5: Activate the Integration**
-
 - In this section we are going to activate our Integration and make it run. 
 
 - Before the activation we need to assign **Tracking** so you can track fields during runtime. 
