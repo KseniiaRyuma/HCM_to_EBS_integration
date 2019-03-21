@@ -35,7 +35,7 @@
 - An HCM instance and connection URL that will be provided by your instructor.
 - An EBS instance and connection URL that will be provided by your instructor.
 
-## **300a.1: HCM Adapter Set Up**
+### **300a.1: HCM Adapter Set Up**
 
 - Select Integrations to open up the Integration console. Then click the `Connections` in the left menu under Designer. And click on **Create** in the upper-right
 
@@ -91,7 +91,7 @@ Your new HCM connection appears in the list of configured connections.
 
 ![](images/300/image018a.png) 
 
-## **300a.2: EBS Adapter Set Up**
+### **300a.2: EBS Adapter Set Up**
 ---
 
 - Select the `Connections` graphic in the designer portal and click on *Create*
@@ -234,9 +234,8 @@ After you've filled in the information, select the **Create** button
 - Before selecting a Function make sure that function exists in Library.
 
 ---
----
 
--  If you have not created a function previously, skip that section.
+-  If you have addTime function to appear in the list of functions in the Library, skip that section.
 
 - Create a JavaScript (.js) file and save it in your PC
 
@@ -272,7 +271,6 @@ Now you can access that Function from your Integration Function Action.
 ![](images/300/16.png)
 
 - Come back to your Scheduled Integration
----
 
 - Select Function button
 
@@ -331,7 +329,7 @@ concat( substring-before( /nssrcmpr:schedule/nssrcmpr:startTime, "."),".000Z")
 
 - Validate the mapping and Close the window
 
-## **300a.7: Assign a Variable**
+### **300a.7: Assign a Variable**
 - To assign a variable, click on the flag icon 
 
 <img src="images/500b/image016.png" width="120px">  

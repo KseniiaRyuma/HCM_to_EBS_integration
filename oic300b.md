@@ -29,7 +29,7 @@
 
 ## **Getting Started**
 
-## **300b.1: Add a Switch Action and Configure a condition**
+### **300b.1: Add a Switch Action and Configure a condition**
 
 - To add a conditional statement, click on the flag icon 
 
@@ -57,7 +57,7 @@
 
 ![](images/500b/image025.png)
 
-## **300b.2: Add a Loop Action**
+### **300b.2: Add a Loop Action**
 - Select _Loop_ from the Action Tab
 
 ![](images/500b/image025a.png)
@@ -78,9 +78,7 @@
 
 ![](images/500b/image025d.png)
 
-## **300b.3: Add EBS Connection to the Orchestration**
-
----
+### **300b.3: Add EBS Connection to the Orchestration**
 
 - Select *Invoke* by clicking on plus sign right under _Loop_Atom_Feed_
 
@@ -126,7 +124,7 @@ Note that the *Service Status* of `Ready to Use` indicates that the API has alre
 
 ![](images/500b/image032.png)
 
-## **300b.4: Mapping to EBS Connector**
+### **300b.4: Mapping to EBS Connector**
 
 - Once the mapping editor is displayed, we can begin to map the variables. Open the Map
 
