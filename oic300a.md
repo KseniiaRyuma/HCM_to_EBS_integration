@@ -347,17 +347,13 @@ concat( substring-before( /nssrcmpr:schedule/nssrcmpr:startTime, "."),".000Z")
 - Set Data Type as string
 - The description is optional: _Count the # of new employees returned_
 - Select the pencil to edit the Value. 
-- Select from _Components_ Functions -> Node-set -> count. And drop it to _Expression_ window.
 
-![](images/500b/image020a.png)
+![](images/300/image020a.png)
 
-- In the expression builder you will drag and drop it to _Expression_ window the `EmployeeNewHireFeedFeed_Update` array that is coming from HCM. Your expression at the end should look like `count($Get-Atom-Feed/nsmpr3:EmployeeNewHireFeedResponse/nsmpr3:EmployeeNewHireFeed_UpdateSet)`
-
-![](images/500b/image020b.png)
-![](images/500b/image020c.png)
+- In the expression builder type 10 - it os going to be the maximum amout for the loop to run.
 
 - Validate the Expression and Close the window.
 
-![](images/500b/image020d.png)
+![](images/300/image020d.png)
 
 ## **THIS LAB IS TO BE CONTINUED AT 300B**
